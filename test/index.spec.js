@@ -8,18 +8,68 @@ describe('Util functions', () => {
       .to.equal('0 minutes ago');
     });
 
-    it('should convert a number to correct text', () => {
+    it('should convert a date 1 minute ago to correct text', () => {
       const d = new Date();
-      const fiveDaysAgo = d.setDate(d.getDate() - 5);
-      expect(timeAgo(fiveDaysAgo))
+      const newDate = d.setMinutes(d.getMinutes() - 1);
+      expect(timeAgo(newDate))
+      .to.equal('1 minute ago');
+    });
+
+    it('should convert a date 20 minutes ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setMinutes(d.getMinutes() - 20);
+      expect(timeAgo(newDate))
+      .to.equal('20 minutes ago');
+    });
+
+    it('should convert a date 5 days ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setDate(d.getDate() - 5);
+      expect(timeAgo(newDate))
       .to.equal('5 days ago');
     });
 
-    it('should convert a number to correct text', () => {
+    it('should convert a date 8 days ago to correct text', () => {
       const d = new Date();
-      const fiveDaysAgo = d.setDate(d.getDate() - 365);
-      expect(timeAgo(fiveDaysAgo))
+      const newDate = d.setDate(d.getDate() - 8);
+      expect(timeAgo(newDate))
+      .to.equal('8 days ago');
+    });
+
+    it('should convert a date 9 days ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setDate(d.getDate() - 9);
+      expect(timeAgo(newDate))
+      .to.equal('9 days ago');
+    });
+
+    it('should convert a date 40 days ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setDate(d.getDate() - 40);
+      expect(timeAgo(newDate))
+      .to.equal('1 month ago');
+    });
+
+    it('should convert a date 80 days ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setDate(d.getDate() - 80);
+      expect(timeAgo(newDate))
+      .to.equal('2 months ago');
+    });
+
+    it('should convert a date 365 days ago to correct text', () => {
+      const d = new Date();
+      const newDate = d.setDate(d.getDate() - 365);
+      expect(timeAgo(newDate))
       .to.equal('1 year ago');
     });
+
+    it('should show new exeption text', () => {
+      expect(timeAgo(new Date(), {
+        exeption: 'Just now'
+      }))
+      .to.equal('Just now');
+    });
+
   });
 });
