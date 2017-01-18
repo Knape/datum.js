@@ -21,7 +21,7 @@ export const getDuration = (seconds) => {
   return null;
 };
 
-export const timeSince = (date, options = {
+export const datum = (date, options = {
   exeption: '0 minutes ago'
 }) => {
   const seconds = Math.floor((new Date() - new Date(date)) / 1000);
@@ -32,4 +32,4 @@ export const timeSince = (date, options = {
     : options.exeption;
 };
 
-export default timeSince;
+export default datum;

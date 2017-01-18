@@ -1,5 +1,5 @@
 {
-  "name": "time-ago",
+  "name": "datum.js",
   "version": "0.6.0",
   "description": "Utility function for diplaying time in a readable way",
   "main": "lib/index.js",
@@ -11,12 +11,12 @@
   "author": "Philip Knape",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Knape/time-ago.git"
+    "url": "https://github.com/Knape/datum.js.git"
   },
   "bugs": {
-    "url": "https://github.com/Knape/time-ago/issues"
+    "url": "https://github.com/Knape/datum.js/issues"
   },
-  "homepage": "https://github.com/Knape/time-ago",
+  "homepage": "https://github.com/Knape/datum.js",
   "license": "MIT",
   "devDependencies": {
     "babel": "~6.5.2",

@@ -1,16 +1,16 @@
-## Time Ago
+## Datun.js
 
-Time Ago is a javascript utility that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "2 day ago").
+Datun.hjs is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
 
 Install the package from [npm](https://npmjs.com/release)
 
 ```bash
-npm install --save time-ago
+npm install --save datum.js
 ```
 
 ## Usage
 
-Just pass a Date object to the function and time-ago will convert it to a readable string.
+Just pass a Date object to the function and datum.js will convert it to a readable string.
 
 #### Time ago supports the following epochs
 * year
@@ -20,34 +20,34 @@ Just pass a Date object to the function and time-ago will convert it to a readab
 * minute
 
 ```js
-import timeAgo from 'time-ago';
+import datum from 'datum.js';
 
 // Create a new date that reflects 2 minutes ago
 const oneMinutesAgo = new Date().setMinutes(new Date().getMinutes() - 1);
 // Create a new date that reflects 5 days ago
 const oneDaysAgo = new Date().setDate(new Date().getDate() - 1);
 
-timeAgo(oneMinutesAgo); // => '1 minute ago'
-timeAgo(oneDaysAgo); // => '1 day ago'
+datum(oneMinutesAgo); // => '1 minute ago'
+datum(oneDaysAgo); // => '1 day ago'
 ```
 
 If the returned value is greater then one, we will add a suffix to the epoch
 
 ```js
-import timeAgo from 'time-ago';
+import datum from 'datum.js';
 
 // Create a new date that reflects 2 minutes ago
 const twoMinutesAgo = new Date().setMinutes(new Date().getMinutes() - 2);
 // Create a new date that reflects 5 days ago
 const twoDaysAgo = new Date().setDate(new Date().getDate() - 2);
 
-timeAgo(twoMinutesAgo); // => '2 minutes ago'
-timeAgo(twoDaysAgo); // => '2 days ago'
+datum(twoMinutesAgo); // => '2 minutes ago'
+datum(twoDaysAgo); // => '2 days ago'
 ```
 
 ## API
 
-#### `timeAgo(date, [options])`
+#### `datum(date, [options])`
 
 The parse method takes a Date object and returns a string
 
