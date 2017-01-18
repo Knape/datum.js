@@ -1,6 +1,6 @@
 ## Time Ago
 
-Time Ago is a javascript utility that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
+Time Ago is a javascript utility that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "2 day ago").
 
 Install the package from [npm](https://npmjs.com/release)
 
