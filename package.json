@@ -1,6 +1,6 @@
 {
   "name": "datum.js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Utility function for diplaying time in a readable way",
   "main": "lib/index.js",
   "scripts": {
