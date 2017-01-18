@@ -1,6 +1,6 @@
-## Datun.js
+## datum.js
 
-Datun.hjs is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
+datum.js is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
 
 Install the package from [npm](https://npmjs.com/release)
 
@@ -12,7 +12,7 @@ npm install --save datum.js
 
 Just pass a Date object to the function and datum.js will convert it to a readable string.
 
-#### Time ago supports the following epochs
+#### Datum.js supports the following epochs
 * year
 * month
 * day
