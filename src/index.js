@@ -22,14 +22,14 @@ export const getDuration = (seconds) => {
 };
 
 export const datum = (date, options = {
-  exeption: '0 minutes ago'
+  exception: '0 minutes ago',
 }) => {
   const seconds = Math.floor((new Date() - new Date(date)) / 1000);
   const duration = getDuration(seconds) || {};
   const suffix = (duration.interval > 1 || duration.interval === 0) ? 's' : '';
   return (duration.interval)
     ? `${duration.interval} ${duration.epoch}${suffix} ago`
-    : options.exeption;
+    : options.exception;
 };
 
 export default datum;
