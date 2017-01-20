@@ -48,19 +48,19 @@ datum(twoDaysAgo); // => '2 days ago'
 ## API
 
 #### `datum(date, [options])`
-
 The parse method takes a Date object and returns a string
 
 #### `date`
 The date param always need to be a date object and will always return a string.
 
 ### Options
+datum.js allows you to change the exception value, i.e the value that will be displayed when the date is less than 1 minute to anything you want.
 ```javascript
 var options = {
-    exeption: '0 minutes a go',
+    exception: '0 minutes a go',
 };
 ```
 
 ## License
 
-[MIT](LICENSE). Copyright (c) 2016 Philip Knape.
+[MIT](LICENSE). Copyright (c) 2017 Philip Knape.
