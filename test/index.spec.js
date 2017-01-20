@@ -64,12 +64,11 @@ describe('Util functions', () => {
       .to.equal('1 year ago');
     });
 
-    it('should show new exeption text', () => {
+    it('should show new exception text', () => {
       expect(datum(new Date(), {
-        exeption: 'Just now'
+        exception: 'Just now'
       }))
       .to.equal('Just now');
     });
-
   });
 });
