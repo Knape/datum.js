@@ -1,4 +1,6 @@
-## datum.js
+# datum.js
+
+[![Build Status](https://travis-ci.org/Knape/datum.js.svg?branch=master)](https://travis-ci.org/Knape/datum.js)
 
 datum.js is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
 
