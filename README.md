@@ -1,6 +1,8 @@
 # datum.js
 
 [![Build Status](https://travis-ci.org/Knape/datum.js.svg?branch=master)](https://travis-ci.org/Knape/datum.js)
+[![Coverage Status](https://coveralls.io/repos/github/Knape/datum.js/badge.svg?branch=master)](https://coveralls.io/github/Knape/datum.js?branch=master)
+[![Code Climate](https://codeclimate.com/github/Knape/extract.js/badges/gpa.svg)](https://codeclimate.com/github/Knape/extract.js)
 
 datum.js is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
 
