@@ -1,4 +1,9 @@
-{
-  "language": "node_js",
-  "node_js": "node"
-}
+
+language: node_js
+node_js:
+  - 6
+addons:
+  code_climate:
+    repo_token: 40add2a3ccb1fcdfaa126aaf93324fa685e132a30441e75c7a22e21f768080b5
+after_success:
+  - npm run coveralls
