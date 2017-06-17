@@ -4,7 +4,7 @@
 
 datum.js is a javascript utility that makes it easy to print readable dates, e.g. 4 minutes ago.
 
-Install the package from [npm](https://npmjs.com/release)
+Install the package from [npm](https://npmjs.com/datum.js)
 
 ```bash
 npm install --save datum.js
